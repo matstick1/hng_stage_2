@@ -1,7 +1,7 @@
 import openai
 from decouple import config
 
-openai.api_key = "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"
+openai.api_key = config("OPENAI")
 
 
 def get_openai(prompt):
